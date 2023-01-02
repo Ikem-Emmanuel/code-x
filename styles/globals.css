@@ -1,3 +1,69 @@
+:root {
+  --rise_red: #b70019;
+  --rise_black: #201e1e;
+  --rise_yellow: #ffc700;
+  --rise_gray: #c4c4c4;
+  --rise_green: #4fcd54;
+  --rise_white: #ffffff;
+}
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+  height: 100vh;
+}
+
+@layer base {
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    outline: none !important;
+    /* --tw-ring-color: theme('colors.rise_yellow', colors.rise_yellow); */
+    border-color: #d1d5db !important;
+  }
+
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  /* select:focus {
+    --tw-ring-color: theme('colors.rise_yellow', colors.rise_yellow) !important;
+  } */
+
+  /* input[type='file']::-webkit-file-upload-button,
+  input[type='file']::file-selector-button {
+    @apply text-rise_red bg-rise_yellow hover:bg-rise_dark/60 font-medium text-sm cursor-pointer border-0 py-2.5 pl-8 pr-4;
+    margin-inline-start: -1rem;
+    margin-inline-end: 1rem;
+  } */
+
+  ul {
+    list-style-type: disc !important;
+    padding-left: 40px !important;
+  }
+}

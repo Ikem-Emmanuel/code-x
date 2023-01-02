@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <p className="text-red-500">hello text</p>
+        <p className="text-dark ">hello text</p>
       </main>
     </>
   );
